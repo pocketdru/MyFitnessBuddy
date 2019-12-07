@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    background-image: url("../img/86156468-seamless-pattern-background-food-and-ingredient-kids-hand-drawing-set-illustration-isolated-on-white.jpg");
+}
+
+body i {
+    font-family:'FontAwesome'!important;
+    font-style: normal;
+    font-size: 30px;
+    float: left;   
+ }
+
+.home h4 {
+    background-color: antiquewhite;
+    border: 1px grey solid;
+}
+
+#navbar-nav {
+    flex-direction: row;
+}
+
+.register h4, .home h4 {
+    padding: 5px 15px;
+}
+
+.panel {
+    border: 5px solid gray; 
+    padding: 20px;;
+}
+
+.panel .btn {
+    display: inline;
+}
+
+#add-meal {
+    margin: 10px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: Lato;
+}
+
+.meal-name {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.panel .spacing {
+    letter-spacing: 4px;
+    text-align: end;
+}
+
+.meal-data {
+    margin: 0 0.1em 0 0.1em;
+}
+
+.meal-details  {
+    text-align: start;
+    font-weight: bold;
+}
+
+.meals-show .panel .btn {
+    display: inline;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.meals-show .time {
+    font-size: 12px;
+}
+
+.error p {
+    margin: 5px;
+    color: red;
+}
+
+.p5 {
+    margin: 15px 10px;
+}
+
+.edit-form {
+    margin: 20px;
+}
+
+.home li  {
+    padding: 15px;
+    display: block;
+}
+
+.foods-ul {
+    margin: 20px 0px;
+}
+
+.foods-ul li {
+    margin-bottom: 30px;
+}
+
+.currentValues {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal .btn-link {
+    color: #fff;
+}
+
+.modal .btn-link:hover {
+    color: cornsilk;
+}
+
+.required {
+    color: red;
+}
