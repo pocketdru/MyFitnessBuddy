@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    background-image: url("../img/86156468-seamless-pattern-background-food-and-ingredient-kids-hand-drawing-set-illustration-isolated-on-white.jpg");
+    background-image: url("../img/back.jpg");
 }
 
 body i {
@@ -8,6 +8,10 @@ body i {
     font-style: normal;
     font-size: 30px;
     float: left;   
+ }
+
+ .carousel {
+     border: 15px solid rgba(255, 255, 255, 0.8);
  }
 
 .home h4 {
@@ -25,7 +29,8 @@ body i {
 
 .panel {
     border: 5px solid gray; 
-    padding: 20px;;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8)!important;
 }
 
 .panel .btn {
