@@ -14,6 +14,20 @@ body i {
      border: 15px solid rgba(255, 255, 255, 0.8);
  }
 
+ .carousel-caption a {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+ }
+
+ .carousel-caption a:hover {
+    color: cornsilk;
+ }
+
 .home h4 {
     background-color: antiquewhite;
     border: 1px grey solid;

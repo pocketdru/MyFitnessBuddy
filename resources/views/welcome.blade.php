@@ -37,8 +37,8 @@ My Fitness buddy
 <div class="item active">
 <img src="assets/img/12.jpg" alt="Sunset over beach">
 <div class="carousel-caption">
-<h3>Boracay</h3>
-<p>White Sand Beach.</p>
+<a href="/register">Create account</a>
+<p>To start tracking your daily nutrition.</p>
 </div>
 </div>
 
@@ -46,8 +46,8 @@ My Fitness buddy
 <div class="item">
 <img src="assets/img/11.jpg" alt="Rob Roy Glacier">
 <div class="carousel-caption">
-<h3>Rob Roy Glacier</h3>
-<p>You can almost touch it!</p>
+<a href="/home">Create a new meal</A>
+<p>To track your calories total amount.</p>
 </div>
 </div>
 
@@ -55,8 +55,8 @@ My Fitness buddy
 <div class="item">
 <img src="assets/img/10.jpg" alt="Longtail boats at Phi Phi">
 <div class="carousel-caption">
-<h3>Phi Phi</h3>
-<p>Longtail boats at Phi Phi.</p>
+<a href="/home">Add meals you eat throughout the day</a>
+<p>Along with the foods that comprise the meal. Track macro-nutrient data</p>
 </div>
 </div>
 
