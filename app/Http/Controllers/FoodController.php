@@ -45,7 +45,7 @@ class FoodController extends Controller
     public function store(Request $request)
     {
         $rules = array(
-            "foodName" =>'required|unique:foods,foodName,NULL,id,' . 'meal_id,' . $request->meal_id . 'max:25|min:3',
+            "foodName" =>'required|unique:foods,foodName,NULL,id,' . 'meal_id,' . $request->meal_id . '|max:25|min:3',
             "protein" => 'required|max:5|min:1',
             "carbs" => 'required|max:5|min:1',
             "fat" => 'required|max:5|min:1',
