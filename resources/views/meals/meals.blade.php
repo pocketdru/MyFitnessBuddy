@@ -64,11 +64,6 @@
                     <label for="exampleInputName">Fat</label>
                     <input name="fat" class="form-control" id="exampleInputName" placeholder="Fat/g">
                 </div>
-                <!-- <div class="form-group">
-                    <label for="exampleInputName">Confirm Password</label>
-                    <input name="confirmPassword" class="form-control" id="exampleInputName" placeholder="">
-                </div> -->
-
 
             <button class="btn btn-primary">Submit</button>
 
