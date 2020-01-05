@@ -14,7 +14,7 @@ My Fitness buddy
                 </h4>
             </div>    
             <p>
-                <a href="login">Login </a> or <a href="users/create">register</a> to get started
+                <a href="login">Login </a> or <a href="register">register</a> to get started
             </p>  
         </div>
     </div>
