@@ -15,7 +15,7 @@
 
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/app.css') }}" type="text/css">
+    <link rel="stylesheet" href="/assets/css/app.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css">    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}} -->
 
