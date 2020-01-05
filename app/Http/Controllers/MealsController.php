@@ -46,7 +46,7 @@ class MealsController extends Controller
     {
         // var_dump($request->input('user_id'));
         $rules = array(
-            "name" =>'required|unique:meals,name,NULL,id,' . 'user_id,' . $request->user_id . '|max:20|min:3'
+            "name" =>'required|unique:meals,name,NULL,id,' . 'user_id,' . (int)$request->user_id . '|max:20|min:3'
         );
 
         $messages = [
@@ -108,7 +108,7 @@ class MealsController extends Controller
     {
 
         $rules = array(
-            "name" =>'required|unique:meals,name,NULL,id,' . 'user_id,' . $request->user_id . '|max:20|min:3'
+            "name" =>'required|unique:meals,name,NULL,id,' . 'user_id,' . (int)$request->user_id . '|max:20|min:3'
         );
 
         $messages = [
@@ -124,7 +124,7 @@ class MealsController extends Controller
             ->withErrors($validator)
             ->withInput();
         } else {
-            $meal = Meal::find($request->id);
+            $meal = Meal::find((int)$request->id);
             $meal->name = $request->name;
             $meal->save();
             return redirect("/meals");

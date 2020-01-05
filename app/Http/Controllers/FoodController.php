@@ -70,13 +70,13 @@ class FoodController extends Controller
         } else {
             $food = new Food();
             $food->foodName = $request->foodName;
-            $food->protein = (int)$request->protein;
-            $food->carbs = (int)$request->carbs;
-            $food->fat = (int)$request->fat;
-            $food->cholesterol = (int)$request->cholesterol;
-            $food->sodium = (int)$request->sodium;
-            $food->fiber = (int)$request->fiber;
-            $food->sugars = (int)$request->sugars;
+            $food->protein = (float)$request->protein;
+            $food->carbs = (float)$request->carbs;
+            $food->fat = (float)$request->fat;
+            $food->cholesterol = (float)$request->cholesterol;
+            $food->sodium = (float)$request->sodium;
+            $food->fiber = (float)$request->fiber;
+            $food->sugars = (float)$request->sugars;
             $food->meal_id = (int)$request->meal_id;
             $food->save();
             return back();
@@ -103,7 +103,7 @@ class FoodController extends Controller
      */
     public function edit($id)
     {
-        $meal_id = Food::find($id)->meal_id;
+        $meal_id = (int)Food::find($id)->meal_id;
         return view('foods.edit',['meal'=> Meal::find($meal_id),'food'=>Food::find($id)]);
     }
 
@@ -142,15 +142,15 @@ class FoodController extends Controller
         } else {
             $food = Food::find($request->id);
             $food->foodName = $request->foodName;
-            $food->protein = $request->protein;
-            $food->carbs = $request->carbs;
-            $food->fat = $request->fat;
-            $food->cholesterol = $request->cholesterol;
-            $food->sodium = $request->sodium;
-            $food->fiber = $request->fiber;
-            $food->sugars = $request->sugars;
+            $food->protein = (float)$request->protein;
+            $food->carbs = (float)$request->carbs;
+            $food->fat = (float)$request->fat;
+            $food->cholesterol = (float)$request->cholesterol;
+            $food->sodium = (float)$request->sodium;
+            $food->fiber = (float)$request->fiber;
+            $food->sugars = (float)$request->sugars;
             $food->save();
-            $meal_id = Food::find($request->id)->meal_id;
+            $meal_id = (int)Food::find($request->id)->meal_id;
             return redirect("/meals/$meal_id");
         }
     }
@@ -163,11 +163,8 @@ class FoodController extends Controller
      */
     public function destroy($id)
     {   
-        $meal_id = Food::find($id)->meal_id;
+        $meal_id = (int)Food::find($id)->meal_id;
         Food::where('id', $id)->delete();
         return redirect("/meals/$meal_id")->withMeal(Meal::find($meal_id));
     }
 }
-
-
-// СДЕЛАТЬ ЮНИК ФУДСОВ ДЛЯ КАЖДОГО МИЛА

@@ -31,8 +31,3 @@ Route::get('meals/foods/{id}', 'FoodController@destroy');
 
 
 });
-
-
-Route::get("/hellolaravel", function () {
-    return "hello laravel";
-});

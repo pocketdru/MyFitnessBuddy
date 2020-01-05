@@ -15,13 +15,13 @@ class CreateFoodsTable extends Migration
         Schema::create('foods', function (Blueprint $table) {
             $table->increments('id');
             $table->string("foodName");
-            $table->integer("protein");
-            $table->integer("carbs");
-            $table->integer("fat");
-            $table->integer("cholesterol");
-            $table->integer("sodium");
-            $table->integer("fiber");
-            $table->integer("sugars");
+            $table->float("protein");
+            $table->float("carbs");
+            $table->float("fat");
+            $table->float("cholesterol");
+            $table->float("sodium");
+            $table->float("fiber");
+            $table->float("sugars");
             $table->integer('meal_id')->unsigned();
             $table->timestamps();
         });
