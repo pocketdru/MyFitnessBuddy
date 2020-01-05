@@ -70,14 +70,14 @@ class FoodController extends Controller
         } else {
             $food = new Food();
             $food->foodName = $request->foodName;
-            $food->protein = $request->protein;
-            $food->carbs = $request->carbs;
-            $food->fat = $request->fat;
-            $food->cholesterol = $request->cholesterol;
-            $food->sodium = $request->sodium;
-            $food->fiber = $request->fiber;
-            $food->sugars = $request->sugars;
-            $food->meal_id = $request->meal_id;
+            $food->protein = (int)$request->protein;
+            $food->carbs = (int)$request->carbs;
+            $food->fat = (int)$request->fat;
+            $food->cholesterol = (int)$request->cholesterol;
+            $food->sodium = (int)$request->sodium;
+            $food->fiber = (int)$request->fiber;
+            $food->sugars = (int)$request->sugars;
+            $food->meal_id = (int)$request->meal_id;
             $food->save();
             return back();
         }
