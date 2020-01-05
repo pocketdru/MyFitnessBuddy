@@ -64,7 +64,7 @@ class MealsController extends Controller
         } else {
             $meal = new Meal();
             $meal->name = $request->name;
-            $meal->user_id = $request->user_id;
+            $meal->user_id = (int)$request->user_id;
     
             $meal->save();
         }
