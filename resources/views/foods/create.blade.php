@@ -136,7 +136,7 @@
                 <h3 class="p5   ">Additional info</h3>
             <div class="form-group col-md-3">
                     <label for="exampleInputName">Cholesterol</label>
-                    <input name="cholesterol" class="form-control" id="exampleInputName" placeholder="Holesterol/mg">
+                    <input name="cholesterol" class="form-control" id="exampleInputName" placeholder="Cholesterol/mg">
                     @if ($errors->has('cholesterol'))
                 <div class="error ml-5 mr-5">
                     <p> {{ $errors->first('cholesterol') }} </p>
