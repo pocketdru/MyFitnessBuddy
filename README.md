@@ -1,5 +1,7 @@
 # MyFitnessBuddy
 
+[Deployed version](https://my-fitness-buddy-ma.herokuapp.com/)
+
 It's a lightweight calorie counter and tracker.
 
 ## Built with
